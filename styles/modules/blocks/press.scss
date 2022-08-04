@@ -1,0 +1,188 @@
+.press {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid $base-line-color;
+  border-top: 1px solid $base-line-color;
+  display: flex;
+
+  &__title {
+    min-width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 3.3%;
+    border-right: 1px solid $base-line-color;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 46px;
+    color: $base-text-color;
+  }
+
+  @media screen and (max-width: 1079px) {
+    &__title {
+      visibility: hidden;
+      max-width: 1px;
+      max-height: 1px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__box {
+    box-sizing: border-box;
+    margin: 3.5% 3.5% 2%;
+    padding: 0;
+    display: grid;
+    gap: 50px 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: (3fr, 1fr);
+    grid-template-areas:
+      "paragraph paragraph"
+      "radio-box button";
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1079px) {
+    &__box {
+      margin: 7% 7% 3%;
+    }
+  }
+
+  &__paragraph {
+    max-width: 95%;
+    min-height: 250px;
+    padding: 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: light;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 42px;
+    color: $base-text-color;
+    grid-area: paragraph;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__paragraph {
+      font-size: 16px;
+      line-height: 27px;
+      min-height: 130px;
+    }
+  }
+
+  &__span-accent {
+    padding: 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: $base-text-color;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__span-accent {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  &__button {
+    margin: 15% 0 9%;
+    justify-self: end;
+    padding: 1% 3%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 50px;
+    text-align: center;
+    font-family: "SourceSansPro";
+    color: $base-text-color;
+    background-color: $base-background-color;
+    border: 1px solid $base-line-color;
+    border-radius: 50%;
+    grid-area: button;
+    width: 110px;
+    height: 52px;
+    text-decoration: none;
+ }
+
+ &__button:hover {
+  color: $dark-text-color;
+  background-color: $base-line-color;
+  font-weight: 600;
+  cursor: pointer;
+ }
+
+ @media screen and (max-width: 599px) {
+  &__button {
+    margin: 20% 5% 15%;
+    font-size: 14px;
+    line-height: 38px;
+    width: 88px;
+    height: 42px;
+  }
+ }
+
+ &__radio-box {
+  padding: 0;
+  margin: 25% 0 0 0;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  grid-area: radio-box;
+ }
+
+ @media screen and (max-width: 599px) {
+  &__radio-box {
+    margin: 35% 0 0;
+  }
+ }
+
+&__radio-button {
+  padding: 0;
+  margin: 3% 5% 0 0;
+  width: 12px;
+  height: 12px;
+}
+
+&__radio-button:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 599px) {
+  &__radio-button {
+    margin: 5% 12% 0 0;
+  }
+}
+
+ &__invisible-radio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+ }
+
+ &__invisible-radio + &__visible-radio {
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+ }
+
+ &__visible-radio {
+  padding: 0;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+ }
+
+}
+
+@media screen and (max-width: 1079px) {
+  .press {
+    display: block;
+  }
+}

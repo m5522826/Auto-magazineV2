@@ -1,0 +1,183 @@
+.intro {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid $base-line-color;
+  padding: 0;
+  margin: 0;
+
+  &__description {
+    margin: 3% 3.5%;
+    min-width: 43%;
+   }
+
+   @media screen and (min-width: 600px) and (max-width: 1079px) {
+    &__description {
+      margin: 0;
+      border-bottom: 1px solid $base-line-color;
+    }
+  }
+
+   @media screen and (max-width: 599px) {
+    &__description {
+      margin: 0;
+      border-bottom: 1px solid $base-line-color;
+      padding: 3%;
+    }
+  }
+
+  &__paragraph {
+    max-width: 90%;
+    padding: 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: light;
+    font-weight: 200;
+    font-size: 30px;
+    line-height: 42px;
+    color: $base-text-color;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1079px) {
+    &__paragraph {
+      padding: 5% 6%;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    &__paragraph {
+      padding: 4%;
+      font-size: 16px;
+      line-height: 27px;
+      max-width: 95%;
+      box-sizing: border-box;
+    }
+  }
+
+  &__span-accent {
+    padding: 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    color: $base-text-color;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__span-accent {
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  &__tables {
+    margin: 0;
+    padding: 0;
+    min-width: 50%;
+    display: flex;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1079px) {
+    &__tables {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    &__tables {
+      display: block;
+    }
+  }
+
+  &__table {
+    margin: 0;
+    padding: 0;
+    min-width: 50%;
+    border-left: 1px solid $base-line-color;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1079px) {
+    &__table {
+      border-right: 1px solid $base-line-color;
+      min-width: 50%;
+      padding-bottom: 30%;
+      border-left: none;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    &__table {
+      border-bottom: 1px solid $base-line-color;
+      border-left: none;
+    }
+  }
+
+  &__title {
+    padding: 0;
+    margin: 10% 13%;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: $base-text-color;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__title {
+      font-size: 22px;
+      line-height: 22px;
+      margin: 5%;
+    }
+  }
+
+  &__list {
+    margin: 14%;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__list {
+      margin: 12% 5% 9%;
+    }
+  }
+
+  &__text {
+    padding: 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: light;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 32px;
+    color: $base-text-color;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 2% 0 0;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1079px) {
+  .intro {
+    display: block;
+  }
+}
+
+ @media screen and (max-width: 599px) {
+  .intro {
+    display: block;
+  }
+ }

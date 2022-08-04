@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <title>Главная страница</title>
+</head>
+<body class="page">
+  <header class="header">
+    <nav class="header__menu">
+      <ul class="header__menu-list">
+        <li class="header__menu-element"><a href="#" class="header__menu-link">Факты</a></li>
+        <li class="header__menu-element"><a href="#" class="header__menu-link">Галерея</a></li>
+        <li class="header__menu-element header__menu-element_active"><a href="#" class="header__menu-link">Пресса</a></li>
+      </ul>
+    </nav>
+    <img class="logo logo_header" src="./images/logo.svg" alt="Логотип">
+    <div class="header__menu-button">
+      <span class="header__menu-button-span"></span>
+      <span class="header__menu-button-span"></span>
+      <span class="header__menu-button-span"></span>
+    </div>
+  </header>
+  <main class="content">
+    <section class="lead">
+      <div class="lead__text-part">
+        <p class="lead__description">volkswagen T1</p>
+        <h1 class="lead__title">Новая версия популярного микроавтобуса</h1>
+        <p class="lead__description">С электродвигателем</p>
+        <img class="lead__pic" src="./images/van-main.png" alt="Вэн">
+        <div class="lead__button"><a class="lead__link" href="#">Подробнее</a></div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="intro__description">
+        <p class="intro__paragraph"><span class="intro__span-accent">VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli:
+          классический вэн T1 1966 года с&nbsp;электрической силовой установкой. По&nbsp;словам производителя, проект получит коммерческое продолжение,
+          и&nbsp;через фирму-партнера eClassics наборы для конверсии микроавтобусов в&nbsp;электрокары
+          и&nbsp;уже готовые машины будут продавать частным клиентам.</p>
+      </div>
+      <div class="intro__tables">
+        <div class="intro__table">
+          <h2 class="intro__title">Плюсы</h2>
+          <ul class="intro__list">
+            <li class="intro__text">+ Экологичный</li>
+            <li class="intro__text">+ Экономный</li>
+            <li class="intro__text">+ Тихий</li>
+          </ul>
+        </div>
+        <div class="intro__table">
+          <h2 class="intro__title">Минусы</h2>
+          <ul class="intro__list">
+            <li class="intro__text">- Дорогой</li>
+            <li class="intro__text">- Подзарядка</li>
+          </ul>
+         </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <img class="gallery__pic" src="./images/van.png" alt="Вэн">
+      <img class="gallery__pic" src="./images/van-inside.png" alt="Вэн">
+      <img class="gallery__pic" src="./images/van-inside2.png" alt="Вэн">
+      <div class="gallery__box">
+        <h2 class="gallery__title">Галерея</h2>
+        <div class="gallery__arrows">
+          <button class="gallery__arrow-left" type="button" id="arrowLeft"><img class="gallery__arrow-left" src="./images/arrow-left.svg" alt="Стрелка налево"></button>
+          <button class="gallery__arrow-right" type="button"><img class="gallery__arrow-right" src="./images/arrow-right.svg" alt="Стрелка направо"></button>
+        </div>
+      </div>
+    </section>
+    <section class="press">
+      <h2 class="press__title">Пресса</h2>
+      <div class="press__box">
+        <p class="press__paragraph"><span class="press__span-accent">Engadget:</span> VW's e-BULLI concept shows how your classic van can become an EV.</p>
+        <fieldset class="press__radio-box">
+          <label for="Engadget" class="press__radio-button" id="EngadgetBtn">
+            <input type="radio" id="Engadget" value="Engadget" class="press__invisible-radio" checked>
+            <span class="press__visible-radio" id="firstRadio"><img src="./images/radio-active.svg" alt="Кружок"></span>
+          </label>
+          <label for="Drive.ru" class="press__radio-button" id="DriveBtn">
+            <input type="radio" id="Drive.ru" value="Drive.ru" class="press__invisible-radio">
+            <span class="press__visible-radio" id="secondRadio"><img src="./images/radio-d.svg" alt="Кружок"></span>
+          </label>
+        </fieldset>
+        <a class="press__button" href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html">Читать</a>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <h2 class="footer__title">Подписка</h2>
+      <p class="footer__subtitle">На новые спецвыпуски машин.</p>
+      <form class="footer__form">
+        <input type="text" class="footer__placeholder footer__placeholder_top" id="nameInput" placeholder="Имя" required>
+        <input type="text" class="footer__placeholder footer__placeholder_top" id="surnameInput" placeholder="Фамилия" required>
+        <input type="email" class="footer__placeholder footer__placeholder_mail" id="urlInput" placeholder="Почта" required>
+        <input type="submit" class="footer__submit-button" value="Подписка">
+      </form>
+    </div>
+    <div class="footer__logo-box">
+      <img class="logo logo_footer" src="./images/logo.svg" alt="Логотип">
+      <p class="footer__author">&copy; Auto-Magazine 2022</p>
+    </div>
+  </footer>
+  <script src="./scripts/index.js"></script>
+</body>
+</html>

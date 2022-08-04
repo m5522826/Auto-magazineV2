@@ -1,0 +1,161 @@
+.lead {
+  border-bottom: 1px solid $base-line-color;
+  margin: 0;
+  padding: 10% 0;
+  position: relative;
+
+  &__text-part {
+    margin: 0;
+    padding: 0;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 1079px) {
+    &__text-part {
+      max-width: 91%;
+      position: relative;
+      margin: 0 auto;
+    }
+  }
+
+  &__description {
+    padding: 5% 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $base-text-color;
+  }
+
+ @media screen and (max-width: 599px) {
+  &__description {
+    font-size: 11px;
+    line-height: 14px;
+    padding: 10% 0;
+  }
+ }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 73px;
+    text-align: center;
+    color: $base-text-color;
+  }
+
+  @media screen and (max-width: 599px) {
+    &__title {
+      font-size: 38px;
+      line-height: 50px;
+    }
+   }
+
+  &__button {
+    margin: 5% auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 64px;
+    border: 1px solid $base-line-color;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 1079px) {
+    &__button {
+      margin: 25% auto 5%;
+    }
+  }
+
+  @media screen and (max-width: 599px) {
+    &__button {
+      margin: 30% auto 10%;
+      width: 280px;
+    }
+  }
+
+  &__link {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "SourceSansPro";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $base-text-color;
+    width: 360px;
+    height: 64px;
+  }
+
+  &__link:hover {
+    color: $dark-text-color;
+    background-color: $base-line-color;
+    font-weight: 600;
+  }
+
+  &__pic {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    width: 720px;
+    height: 540px;
+  }
+
+  @media screen and (min-width: 1080px) and (max-width: 1280px) {
+    &__pic {
+      width: 576px;
+      height: 432px;
+    }
+  }
+
+  @media screen and (min-width: 750px) and (max-width: 1079px) {
+    &__pic {
+      position: relative;
+      margin: 0 auto;
+      top: 80px;
+      width: 700px;
+      height: 510px;
+    }
+  }
+
+  @media screen and (min-width: 615px) and (max-width: 749px) {
+    &__pic {
+      position: relative;
+      margin: 0 auto;
+      top: 80px;
+      width: 560px;
+      height: 408px;
+    }
+  }
+
+  @media screen and (max-width: 614px) {
+    &__pic {
+      position: relative;
+      margin: 0 auto;
+      top: 30px;
+      width: 280px;
+      height: 202px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1079px) {
+  .lead {
+    margin: 0 auto;
+    padding: 7.5% 0;
+  }
+}

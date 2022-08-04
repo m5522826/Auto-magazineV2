@@ -1,0 +1,46 @@
+.logo {
+  align-self: center;
+  margin: 0 18%;
+  padding: 0;
+
+  &_hidden {
+    visibility: hidden;
+  }
+
+  &_header {
+    width: 184px;
+    height: 38px;
+  }
+
+  @media screen and (max-width: 599px) {
+    &_header {
+      width: 100px;
+      height: 20px;
+    }
+  }
+
+  &_footer {
+    width: 184px;
+    height: 38px;
+  }
+
+  @media screen and (max-width: 599px) {
+    &_footer {
+      width: 280px;
+      height: 58px;
+    }
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1079px) {
+    .logo {
+      margin: 0 38% 2%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+  .logo {
+    margin: 4% 33% 6%;
+  }
+}
